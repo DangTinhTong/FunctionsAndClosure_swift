@@ -1,1 +1,0 @@
--Try to figure it out functions and closure

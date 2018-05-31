@@ -79,3 +79,17 @@ hasAnyMatches(list: numbers, condition: lessThanTen)
 //
 var numbers0 = [10, 20, 30]
 hasAnyMatches(list: numbers, condition: lessThanTen)
+
+// Functions are actually a special case of closures: Blocks of code that can be called latter.
+// Can write a closure without name by surrounding code with braces ({}). Use in to separate the arguments and return type from the body
+numbers.map( { (number: Int) -> Int in
+    let result = 3*number
+    return result
+    
+})
+let mappeNumbers = numbers.map({ number in 3*number })
+print(mappeNumbers)
+let sortedNumbers = numbers.sorted
+{$0 > $1}
+print(sortedNumbers)
+
